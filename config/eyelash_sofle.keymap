@@ -41,7 +41,19 @@
         #binding-cells = <0>;
         bindings = <&kp LEFT_CONTROL>, <&kp RIGHT_CONTROL>;
 
-        tapping-term-ms = <300>;
+        tapping-term-ms = <250>;
+    };
+
+    fn_tap: fn_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "FN_TAP";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        quick-tap-ms = <150>;
+        tapping-term-ms = <200>;
+        flavor = "tap-preferred";
+        require-prior-idle-ms = <150>;
     };
 
     behaviors {
@@ -52,24 +64,24 @@
 
         default {
             bindings = <
-&kp ESC      &kp N1     &kp N2        &kp N3       &kp N4       &kp N5             &mmv MOVE_UP     &kp N6           &kp N7       &kp N8       &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB      &kp Q      &kp W         &kp E        &kp R        &kp T              &mmv MOVE_DOWN   &kp Y            &kp U        &kp I        &kp O    &kp P     &kp BSLH
-&lt 1 ENTER  &kp A      &kp S         &kp D        &kp F        &kp G              &mmv MOVE_LEFT   &kp H            &kp J        &kp K        &kp L    &kp SEMI  &kp APOS
-&kp LSHFT    &kp Z      &kp X         &kp C        &kp V        &kp B              &mmv MOVE_RIGHT  &kp N            &kp M        &kp COMMA    &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-&kp C_MUTE   &kp LCTRL  &kp LEFT_GUI  &ctrl_dance  &lt 1 SPACE  &lt 2 BACKSPACE    &mkp LCLK        &lt 2 BACKSPACE  &lt 1 SPACE  &ctrl_dance  &none    &none
+&kp ESC      &kp N1     &kp N2        &kp N3       &kp N4           &kp N5                 &mmv MOVE_UP     &kp N6               &kp N7           &kp N8         &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB      &kp Q      &kp W         &kp E        &kp R            &kp T                  &mmv MOVE_DOWN   &kp Y                &kp U            &kp I          &kp O    &kp P     &kp BSLH
+&lt 1 ENTER  &kp A      &kp S         &kp D        &kp F            &kp G                  &mmv MOVE_LEFT   &kp H                &kp J            &kp K          &kp L    &kp SEMI  &kp APOS
+&kp LSHFT    &kp Z      &kp X         &kp C        &kp V            &kp B                  &mmv MOVE_RIGHT  &kp N                &kp M            &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+&kp C_MUTE   &kp LCTRL  &kp LEFT_GUI  &ctrl_dance  &fn_tap 1 SPACE  &fn_tap 2 BACKSPACE    &mkp LCLK        &fn_tap 2 BACKSPACE  &fn_tap 1 SPACE  &kp RIGHT_ALT  &none    &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&scroll_encoder>;
             display-name = "LAYER0";
         };
 
         fn1 {
             bindings = <
-&trans  &trans  &trans     &trans    &trans     &trans    &trans  &kp KP_PLUS      &kp N7  &kp N8     &kp N9   &trans         &trans
-&trans  &trans  &kp HOME   &kp UP    &kp END    &trans    &trans  &kp KP_MINUS     &kp N4  &kp N5     &kp N6   &kp EQUAL      &trans
-&trans  &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans    &trans  &kp KP_MULTIPLY  &kp N1  &kp N2     &kp N3   &kp SEMI       &kp SQT
-&trans  &trans  &kp PG_UP  &trans    &kp PG_DN  &trans    &trans  &kp PERCENT      &kp N0  &kp COMMA  &kp DOT  &kp KP_DIVIDE  &trans
-&trans  &trans  &trans     &trans    &trans     &trans    &trans  &trans           &trans  &trans     &trans   &trans
+&trans  &trans     &trans    &trans     &trans  &trans    &trans  &kp KP_PLUS      &kp N7  &kp N8     &kp N9   &trans         &trans
+&trans  &kp HOME   &kp UP    &kp END    &none   &trans    &trans  &kp KP_MINUS     &kp N4  &kp N5     &kp N6   &kp EQUAL      &trans
+&trans  &kp LEFT   &kp DOWN  &kp RIGHT  &none   &trans    &trans  &kp KP_MULTIPLY  &kp N1  &kp N2     &kp N3   &kp SEMI       &kp SQT
+&trans  &kp PG_UP  &none     &kp PG_DN  &none   &trans    &trans  &kp PERCENT      &kp N0  &kp COMMA  &kp DOT  &kp KP_DIVIDE  &trans
+&trans  &trans     &trans    &trans     &trans  &trans    &trans  &trans           &trans  &trans     &trans   &trans
             >;
         };
 
