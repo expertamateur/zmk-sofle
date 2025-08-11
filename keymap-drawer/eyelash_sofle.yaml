@@ -56,7 +56,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
+  - '&ctrl_dance'
   - {t: '$$mdi:keyboard-space$$', h: fn1}
   - {t: '$$mdi:backspace$$', h: layer1}
   - $$mdi:mouse-left-click-outline$$
