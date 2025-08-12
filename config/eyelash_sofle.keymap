@@ -32,7 +32,6 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <100>;
         label = "SCROLL_UP_DOWN";
     };
 
@@ -87,6 +86,7 @@
         rt_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <50 49>;
+            layers = <0>;
         };
 
         euqal_plus {
