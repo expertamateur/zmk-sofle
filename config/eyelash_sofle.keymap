@@ -75,21 +75,24 @@
         esc_comb {
             bindings = <&kp ESC>;
             key-positions = <0 13>;
+            layers = <0>;
         };
 
         lf_bracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <48 49>;
+            key-positions = <48 47>;
+            layers = <0>;
         };
 
         rt_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <50 51>;
+            key-positions = <50 49>;
         };
 
         euqal_plus {
             bindings = <&kp EQUAL>;
-            key-positions = <12 25>;
+            key-positions = <25 38>;
+            layers = <0>;
         };
     };
 
