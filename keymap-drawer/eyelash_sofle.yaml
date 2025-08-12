@@ -57,10 +57,10 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - '&ctrl_dance'
-  - {t: '$$mdi:keyboard-space$$', h: fn1}
+  - {t: '$$mdi:backspace$$', h: layer1}
   - {t: '$$mdi:backspace$$', h: layer1}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:backspace$$', h: layer1}
+  - {t: '$$mdi:keyboard-return$$', h: layer1}
   - {t: '$$mdi:keyboard-space$$', h: fn1}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -187,8 +187,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {type: held alternate}
   - $$mdi:mouse-left-click-outline$$
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
