@@ -71,25 +71,25 @@
     combos {
         compatible = "zmk,combos";
 
-        esc_comb {
+        comb_esc {
             bindings = <&kp ESC>;
             key-positions = <0 13>;
             layers = <0>;
         };
 
-        lf_bracket {
+        comb_lf_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <48 47>;
             layers = <0>;
         };
 
-        rt_bracket {
+        comb_rt_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <50 49>;
             layers = <0>;
         };
 
-        euqal_plus {
+        comb_euqal_plus {
             bindings = <&kp EQUAL>;
             key-positions = <25 38>;
             layers = <0>;
