@@ -652,9 +652,9 @@ rect.held, rect.combo.held {
 <text x="700" y="188" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="798" y="201" width="28" height="26" class="combo"/>
-<text x="812" y="214" class="combo tap">]</text>
-<text x="812" y="203" class="combo shifted">}</text>
+<rect rx="6" ry="6" x="742" y="186" width="28" height="26" class="combo"/>
+<text x="756" y="200" class="combo tap">]</text>
+<text x="756" y="188" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="882" y="127" width="28" height="26" class="combo"/>
