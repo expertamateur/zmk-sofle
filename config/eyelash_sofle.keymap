@@ -41,7 +41,7 @@
         #binding-cells = <0>;
         bindings = <&kp LEFT_CONTROL>, <&kp RIGHT_CONTROL>;
 
-        tapping-term-ms = <220>;
+        tapping-term-ms = <150>;
     };
 
     fn_tap: fn_tap {
@@ -85,7 +85,7 @@
 
         comb_rt_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <50 49>;
+            key-positions = <49 48>;
             layers = <0>;
         };
 
