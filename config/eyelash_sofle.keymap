@@ -26,13 +26,23 @@
     trigger-period-ms = <16>;
 };
 
-layer_lock: sticky_layer_lock { // 这里的第二个词 "sticky_layer_lock" 也是自定义的，可以随便写
-    compatible = "zmk,behavior-sticky-layer";
-    bindings = <&kp>;
-    release-after-ms = <(-1)>;
-};
+// layer_lock: sticky_layer_lock { // 这里的第二个词 "sticky_layer_lock" 也是自定义的，可以随便写
+//&
+//    compatible = "zmk,behavior-sticky-layer";
+//    bindings = <&kp>;
+//    release-after-ms = <(-1)>;
+//};
+
 
 / {
+    // 定义部分，可以叫 sl 也可以叫 layer_lock
+    layer_lock: sticky_layer_lock {
+        compatible = "zmk,behavior-sticky-layer";
+    
+        #binding-cells = <2>;
+        bindings = <&mo>, <&kp>;
+        tapping-term-ms = <200>; // 这个参数虽然在此场景下作用不大，但属于标准配置项
+    };
     scroll_up_down: scroll_up_down {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
