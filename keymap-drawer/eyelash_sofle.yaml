@@ -110,7 +110,7 @@ layers:
   - {t: '=', s: +}
   - {t: '-', s: _}
   - Sft+>
-  - {t: num_syb, h: toggle}
+  - '&layer_lock 1'
   - $$mdi:arrow-right-bold$$
   - '%'
   - {t: '0', s: )}
@@ -175,7 +175,7 @@ layers:
   - Ins
   - PG DN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: direction, h: toggle}
+  - '&layer_lock 2'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
