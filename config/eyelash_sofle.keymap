@@ -42,7 +42,7 @@
         #binding-cells = <0>;
         bindings = <&kp LEFT_CONTROL>, <&kp RIGHT_CONTROL>;
 
-        tapping-term-ms = <220>;
+        tapping-term-ms = <150>;
     };
 
     fn_tap: fn_tap {
@@ -51,8 +51,8 @@
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
-        quick-tap-ms = <200>;
-        tapping-term-ms = <200>;
+        quick-tap-ms = <170>;
+        tapping-term-ms = <170>;
         flavor = "tap-preferred";
         require-prior-idle-ms = <150>;
     };
