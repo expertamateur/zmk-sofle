@@ -67,50 +67,50 @@ layers:
   - {t: ']', s: '}'}
   num_syb:
   - {t: '`', s: '~'}
-  - Sft+!
-  - Sft+@
-  - Sft+#
-  - Sft+$
-  - Sft+%
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
   - $$mdi:arrow-up-bold$$
-  - Sft++
+  - +
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - Sft+^
-  - Sft+!
   - '~'
-  - {t: ',', s: <}
-  - Sft+(
-  - Sft+)
-  - {t: ;, s: ':'}
+  - $$mdi:apple-keyboard-control$$
+  - '~'
+  - <
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  - '>'
   - '~'
   - $$mdi:arrow-down-bold$$
   - {t: '-', s: _}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - Sft+&
-  - Sft+|
+  - '&'
+  - '|'
   - _
-  - Sft+{
+  - '{'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - Sft+}
+  - '}'
   - _
   - $$mdi:arrow-left-bold$$
-  - Sft+*
+  - '*'
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - ':'
   - {t: '''', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Sft+<
-  - {t: '=', s: +}
-  - {t: '-', s: _}
-  - Sft+>
-  - '&layer_lock 1'
+  - {t: ',', s: <}
+  - (
+  - )
+  - {t: ;, s: ':'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-right-bold$$
   - '%'
   - {t: '0', s: )}
@@ -128,8 +128,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   direction:
   - $$mdi:keyboard-esc$$
   - F1
@@ -175,7 +175,7 @@ layers:
   - Ins
   - PG DN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&layer_lock 2'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
