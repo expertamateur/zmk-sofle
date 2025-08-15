@@ -33,7 +33,6 @@
 //    release-after-ms = <(-1)>;
 //};
 
-
 / {
     // 定义部分，可以叫 sl 也可以叫 layer_lock
     //layer_lock: sticky_layer_lock {
@@ -43,6 +42,7 @@
     //    bindings = <&mo>, <&kp>;
     //    tapping-term-ms = <200>; // 这个参数虽然在此场景下作用不大，但属于标准配置项
     //};
+
     scroll_up_down: scroll_up_down {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
@@ -91,11 +91,11 @@
 
         default {
             bindings = <
-&kp ESC      &kp F1        &kp F2    &kp F3       &kp F4               &kp F5           &mmv MOVE_UP     &kp F6           &kp F7           &kp F8         &kp F9            &kp MINUS          &kp EQUAL
-&kp TAB      &kp Q         &kp W     &kp E        &kp R                &kp T            &mmv MOVE_DOWN   &kp Y            &kp U            &kp I          &kp O             &kp P              &kp BSLH
-&lt 2 ENTER  &kp A         &kp S     &kp D        &kp F                &kp G            &mmv MOVE_LEFT   &kp H            &kp J            &kp K          &kp L             &kp SEMI           &kp APOS
-&kp LSHFT    &kp Z         &kp X     &kp C        &kp V                &kp B            &mmv MOVE_RIGHT  &kp N            &kp M            &kp COMMA      &kp DOT           &kp FSLH           &kp RIGHT_SHIFT
-&kp F24      &kp LEFT_WIN  &kp LALT  &ctrl_dance  &fn_tap 2 BACKSPACE  &fn_tap 3 DEL    &mkp LCLK        &fn_tap 0 ENTER  &fn_tap 1 SPACE  &kp RIGHT_ALT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp ESC      &kp F1        &kp F2    &kp F3       &kp F4               &kp F5           &mmv MOVE_UP     &kp F6           &kp F7           &kp F8         &kp F9   &kp F10   &kp F11
+&kp TAB      &kp Q         &kp W     &kp E        &kp R                &kp T            &mmv MOVE_DOWN   &kp Y            &kp U            &kp I          &kp O    &kp P     &kp BSLH
+&lt 2 ENTER  &kp A         &kp S     &kp D        &kp F                &kp G            &mmv MOVE_LEFT   &kp H            &kp J            &kp K          &kp L    &kp SEMI  &kp APOS
+&kp LSHFT    &kp Z         &kp X     &kp C        &kp V                &kp B            &mmv MOVE_RIGHT  &kp N            &kp M            &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+&kp F24      &kp LEFT_WIN  &kp LALT  &ctrl_dance  &fn_tap 2 BACKSPACE  &fn_tap 3 DEL    &mkp LCLK        &fn_tap 0 ENTER  &fn_tap 1 SPACE  &kp RIGHT_ALT  &kp F12  &kp F24
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -104,11 +104,11 @@
 
         num_syb {
             bindings = <
-&kp GRAVE       &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)     &kp UP     &kp LS(PLUS)  &kp N7  &kp N8     &kp N9    &kp LS(CARET)  &kp LS(EXCL)
-&kp TILDE       &kp COMMA     &kp LS(LPAR)  &kp LS(RPAR)   &kp SEMI      &kp TILDE         &kp DOWN   &kp MINUS     &kp N4  &kp N5     &kp N6    &kp LS(AMPS)   &kp LS(PIPE)
-&kp UNDERSCORE  &kp LS(LBRC)  &kp LBKT      &kp RBKT       &kp LS(RBRC)  &kp UNDERSCORE    &kp LEFT   &kp LS(STAR)  &kp N1  &kp N2     &kp N3    &kp COLON      &kp SQT
-&none           &kp LS(LT)    &kp EQUAL     &kp MINUS      &kp LS(GT)    &none            &kp RIGHT  &kp PERCENT   &kp N0  &kp COMMA  &kp DOT   &kp FSLH       &kp EQUAL
-&trans          &trans        &trans        &trans         &trans        &trans            &trans     &trans        &trans  &trans     &kp LBKT  &kp RBKT
+&kp GRAVE       &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT       &kp UP     &kp PLUS     &kp N7  &kp N8     &kp N9   &kp TILDE  &kp LCTRL
+&kp TILDE       &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp TILDE         &kp DOWN   &kp MINUS    &kp N4  &kp N5     &kp N6   &kp AMPS   &kp PIPE
+&kp UNDERSCORE  &kp LBRC   &kp LBKT   &kp RBKT   &kp RBRC    &kp UNDERSCORE    &kp LEFT   &kp ASTRK    &kp N1  &kp N2     &kp N3   &kp COLON  &kp SQT
+&none           &kp COMMA  &kp LPAR   &kp RPAR   &kp SEMI    &none             &kp RIGHT  &kp PERCENT  &kp N0  &kp COMMA  &kp DOT  &kp FSLH   &kp EQUAL
+&trans          &trans     &trans     &trans     &trans      &trans            &trans     &trans       &trans  &trans     &none    &none
             >;
 
             sensor-bindings = <&scroll_rl>;
