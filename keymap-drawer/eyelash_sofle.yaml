@@ -78,7 +78,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - '~'
-  - $$mdi:apple-keyboard-control$$
+  - ^
   - '~'
   - <
   - {t: '-', s: _}
