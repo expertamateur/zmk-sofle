@@ -104,7 +104,7 @@
 
         num_syb {
             bindings = <
-&kp GRAVE       &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT       &kp UP     &kp PLUS     &kp N7  &kp N8     &kp N9   &kp TILDE  &kp LCTRL
+&kp GRAVE       &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT       &kp UP     &kp PLUS     &kp N7  &kp N8     &kp N9   &kp TILDE  &kp CARET
 &kp TILDE       &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp TILDE         &kp DOWN   &kp MINUS    &kp N4  &kp N5     &kp N6   &kp AMPS   &kp PIPE
 &kp UNDERSCORE  &kp LBRC   &kp LBKT   &kp RBKT   &kp RBRC    &kp UNDERSCORE    &kp LEFT   &kp ASTRK    &kp N1  &kp N2     &kp N3   &kp COLON  &kp SQT
 &none           &kp COMMA  &kp LPAR   &kp RPAR   &kp SEMI    &none             &kp RIGHT  &kp PERCENT  &kp N0  &kp COMMA  &kp DOT  &kp FSLH   &kp EQUAL
